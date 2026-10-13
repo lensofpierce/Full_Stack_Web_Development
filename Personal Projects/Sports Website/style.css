@@ -1,0 +1,47 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.nav-header {
+    display: flex;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: flex-start;    /* unnecessary  because it takes up the natural width due to nav-center's flex:1 taking up the free space from the center*/
+    gap: 1rem;
+}
+
+.nav-center {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    min-width: 200px;
+}
+
+.search-bar {
+    width: 75%;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;      /* unnecessary  because it takes up the natural width due to nav-center's flex:1 taking up the free space from the center*/
+    gap: 1rem;
+}
+
+.score-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.team-logo{
+    height: 190px;
+    width: auto;
+} 
